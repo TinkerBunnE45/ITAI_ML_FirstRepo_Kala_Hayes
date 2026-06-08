@@ -24,6 +24,8 @@ Contains the course-required introduction line and greetings contributed by each
 
 - Edwin Alvarado  Cloned the repository, updated the hello_ml.txt, and submitted a pull request.
 
+- Anashrah Adil  Cloned the repository, updated the hello_ml.txt, and submitted a pull request.
+
 ## Course Information
 ITAI-1371-Intro to Machine Learning
 Professor Viswanatha Rao
