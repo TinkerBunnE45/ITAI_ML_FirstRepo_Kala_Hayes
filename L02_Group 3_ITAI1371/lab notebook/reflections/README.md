@@ -1,4 +1,0 @@
-- L02_Group 3_ITAI1371 lab module
-- L02_Group 3_ITAI1371 Lab notebook
-- L02_Group 3_ITAI1371 Lab reflections
-- L02_Group 3_ITAI1371 Contributions 
