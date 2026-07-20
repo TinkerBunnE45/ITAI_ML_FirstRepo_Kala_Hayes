@@ -1,6 +1,6 @@
 # ITAI-1371: Intro to Machine Learning
 
-> **Lab 05: Data Preprocessing and Feature Engineering**
+> **Lab 06:  Regression and Classification**
 > **Class:** 6263-ITAI-1371-S10-12321
 > **Group:** Group 3
 > 
