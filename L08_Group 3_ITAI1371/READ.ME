@@ -1,1 +1,76 @@
+# ITAI-1371: Intro to Machine Learning
+## Lab 08: Model Complexity & Generalization
+
+* **Class:** 6263-ITAI-1371-S10-12321
+* **Group:** Group 3 👥
+* **Team Members:**
+  * Kala Hayes
+  * Edwin Alvarado
+  * Anashrah Adil
+  * Zain Ahmed
+
+---
+
+## 📊 Project Overview
+
+This machine learning lab focuses on analyzing the **Bias-Variance Tradeoff** and diagnosing fundamental fitting issues in modeling workflows. By training polynomial regression models of varying complexities on a noisy synthetic sine wave dataset, we visually map out underfitting, overfitting, and generalized sweet spots. Additionally, we leverage cross-validated learning curves to structurally trace model performance behaviors.
+
+This codebase is built entirely using **PEP 8 Python styling standards**, utilizing precise 4-space script indentation blocks and alphabetical third-party package alignment.
+
+---
+
+## 🗃️ Dataset & System Setup
+
+The model utilizes a generated synthetic dataset to simulate real-world data noise:
+
+* **Features Used:** `X` (A single continuous variable reshaped as an explicit 2D column array).
+* **Target Variable:** `y` (A continuous sine wave altered with randomized normal Gaussian noise).
+* **Data Scale:** 100 sample data points scaled uniformly across an interval from -5 to 5.
+
+---
+
+## 📈 Model Performance & Evaluation
+
+### 1. Model Complexity Evaluation
+By looping through varied structural hyperparameter dimensions, the models illustrated clear regression profiles:
+
+* **Degree 1 (Underfitting):** Forces a rigid, straight line across a curved wave pattern. It exhibits *High Bias*, failing to capture the structural data properties on both training and test data splits.
+* **Degree 4 (Optimal Fit):** Smoothly tracks the natural central arc of the data stream without adapting to minor, random variances.
+* **Degree 15 (Overfitting):** Oscillates chaotically. It exhibits *High Variance*, twisting aggressively to connect individual random noise outliers.
+
+### 2. Diagnostic Learning Curve Interpretations
+
+#### The Underfit Profile (Degree 1)
+* **Observation:** Both the training score and the 5-fold cross-validation score flatten out almost instantly as the number of examples grows.
+* **Meaning:** The metrics converge tightly together but remain locked at an unacceptably low error baseline. This proves that adding more data points to an oversimplified model cannot fix performance if the mathematical architecture lacks capacity.
+
+#### The Overfit Profile (Degree 15)
+* **Observation:** A massive performance gap emerges between the two metrics. The training line remains near perfect (`1.0`), while the cross-validation score plummets into catastrophic negative ranges.
+* **Meaning:** The evaluation score dives severely into extreme scientific notation up to a scale factor of $10^{21}$. This confirms that the model has memorized specific training noise rather than mapping broad, repeatable features.
+
+---
+
+## 🛠️ Requirements & Installation
+
+To run this notebook locally, ensure you have Python installed along with the following computing and visualization libraries:
+
+```bash
+pip install numpy scikit-learn matplotlib
+```
+
+---
+
+## 🚀 How to Run
+
+1. Clone this repository to your local computer terminal workspace.
+2. Open the `.ipynb` notebook file using Google Colab, Jupyter Notebook, or VS Code.
+3. Run the cells sequentially to engineer the synthetic features, construct the polynomial pipeline wrapper, and render the validation charts.
+4. **Style Check:** Ensure your compiler retains identical spatial adjustments (4 spaces per indentation level) inside loop structures to comply with PEP 8 standards and avoid script execution crashes.
+
+---
+
+## 💡 Key Takeaways & Trade-offs
+
+* **The Bias-Variance Balance:** Machine learning engineering requires a deliberate compromise. Selecting a model that is too simple leads to structural blindness (High Bias), while selecting a model that is too complex leads to noise memorization (High Variance).
+* **The Diagnostic Power of Learning Curves:** Simply looking at a perfect training error score is deceptive. Plotting cross-validated performance against dataset scale changes is the most reliable method for catching overfitting before deploying models to production.
 
