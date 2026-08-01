@@ -1,0 +1,60 @@
+# ITAI-1371: Intro to Machine Learning
+## Lab 09: Ensemble Methods
+
+* **Class:** 6263-ITAI-1371-S10-12321
+* **Group:** Group 3 👥
+* **Team Members:**
+  * Kala Hayes
+  * Edwin Alvarado
+  * Anashrah Adil
+  * Zain Ahmed
+# Iris Species Classification using Ensemble Methods
+
+An educational machine learning project exploring the power of ensemble learning. This repository compares the performance of a single **Decision Tree** against a **Random Forest Classifier** using the classic Iris dataset, followed by an analysis of feature importances.
+
+## 🚀 Project Overview
+
+The objective of this project is to implement and evaluate ensemble methods to understand why a "committee" of models can provide more robust predictions than a single expert model. 
+
+### Key Components:
+1. **Data Setup:** Loading and splitting the Iris dataset into training and testing subsets using `scikit-learn`.
+2. **Single Decision Tree:** Training a standalone classifier prone to high variance and overfitting.
+3. **Random Forest Ensemble:** Training a 100-tree forest utilizing bagging and feature randomness to optimize robustness.
+4. **Feature Importance Visualization:** Extracting data-driven insights using `matplotlib` to see which physical traits impact the classification most.
+
+## 🛠️ Tech Stack & Libraries
+
+* **Language:** Python
+* **Machine Learning:** `scikit-learn`
+* **Data Manipulation:** `pandas`, `numpy`
+* **Data Visualization:** `matplotlib`
+
+## 📊 Performance & Insights
+
+### Model Comparison
+* **Single Decision Tree Accuracy:** 100.00%
+* **Random Forest Accuracy:** 100.00%
+
+*Note: While Random Forests typically outperform single decision trees on noisy real-world data, both models achieved perfect accuracy here due to the clean, easily separable nature of the small Iris dataset.*
+
+### Feature Importance Summary
+The model revealed that **petal length** and **petal width** are the primary diagnostic features for distinguishing between Iris species, holding significantly higher predictive weight than sepal metrics.
+
+## 💻 How to Run
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com
+   ```
+2. Install dependencies:
+   ```bash
+   pip install pandas numpy scikit-learn matplotlib
+   ```
+3. Open and execute the Jupyter Notebook cell-by-cell.
+
+## 📂 Repository Structure
+
+```text
+├── README.md
+└── ensemble_methods_lab.ipynb   # Contains full code implementations and visualizations
+```
