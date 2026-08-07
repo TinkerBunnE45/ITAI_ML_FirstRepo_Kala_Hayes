@@ -20,7 +20,6 @@ Per assignment guidelines, no files are uploaded to Canvas. All required final d
 │
 ├── 📄 YOUR_NAME_ML_ITAI1371_12321_FINAL.ipynb # Complete executed Colab/Jupyter Notebook
 ├── 📄 healthcare-dataset-stroke-data.csv     # Raw input clinical data file
-├── 📄 Model_Comparison_Matrix.pdf            # PDF copy of filled validation & test tables
 ├── 📄 Final_Project_Report.pdf               # Full analytical write-up discussing approach
 ├── 📄 Presentation_Slides.pdf                # 3-4 slide deck summary briefing
 └── 📄 Reflection_Journal.md                  # Project engineering retrospective documentation
