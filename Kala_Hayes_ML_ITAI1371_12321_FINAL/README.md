@@ -18,7 +18,7 @@ Per assignment guidelines, no files are uploaded to Canvas. All required final d
 ```text
 📁 Kala_Hayes_ML_ITAI1371_12321_FINAL/
 │
-├── 📄 YOUR_NAME_ML_ITAI1371_12321_FINAL.ipynb # Complete executed Colab/Jupyter Notebook
+├── 📄 Kala_Hayes_ML_ITAI1371_12321_FINAL.ipynb # Complete executed Colab/Jupyter Notebook
 ├── 📄 healthcare-dataset-stroke-data.csv     # Raw input clinical data file
 ├── 📄 Final_Project_Report.pdf               # Full analytical write-up discussing approach
 ├── 📄 Presentation_Slides.pdf                # 3-4 slide deck summary briefing
